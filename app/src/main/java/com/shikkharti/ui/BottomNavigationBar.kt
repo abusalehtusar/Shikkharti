@@ -28,6 +28,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.mutableIntStateOf
+import com.shikkharti.ui.theme.surfaceContainer
+import com.shikkharti.ui.theme.secondaryContainer
 
 data class NavItem(
     val title: String,

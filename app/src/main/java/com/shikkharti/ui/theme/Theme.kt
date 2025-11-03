@@ -14,18 +14,25 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import com.shikkharti.ui.theme.Purple40
+import com.shikkharti.ui.theme.PurpleGrey40
+import com.shikkharti.ui.theme.Pink40
+import com.shikkharti.ui.theme.surfaceContainer
+import com.shikkharti.ui.theme.secondaryContainer
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
     secondary = PurpleGrey80,
     tertiary = Pink80,
+    surface = surfaceContainer,
+    secondaryContainer = secondaryContainer
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Purple40,
     secondary = PurpleGrey40,
     tertiary = Pink40,
-    surfaceContainer = surfaceContainer,
+    surface = surfaceContainer,
     secondaryContainer = secondaryContainer
 )
 
