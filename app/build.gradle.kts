@@ -59,7 +59,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 
 dependencies {
 
-    implementation(platform("androidx.compose:compose-bom:2022.10.00"))
+    implementation(platform("androidx.compose:compose-bom:2025.08.00"))
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui-graphics")

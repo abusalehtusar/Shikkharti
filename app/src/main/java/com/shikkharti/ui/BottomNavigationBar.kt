@@ -1,8 +1,5 @@
-
 package com.shikkharti.ui
 
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.BarChart
@@ -14,6 +11,7 @@ import androidx.compose.material.icons.outlined.BarChart
 import androidx.compose.material.icons.outlined.Description
 import androidx.compose.material.icons.outlined.MenuBook
 import androidx.compose.material.icons.outlined.TaskAlt
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -25,12 +23,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
-import androidx.compose.ui.unit.dp
-import androidx.compose.runtime.mutableIntStateOf
-import com.shikkharti.ui.theme.surfaceContainer
 import com.shikkharti.ui.theme.secondaryContainer
+import com.shikkharti.ui.theme.surfaceContainer
 
 data class NavItem(
     val title: String,
@@ -38,6 +33,7 @@ data class NavItem(
     val unselectedIcon: ImageVector
 )
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BottomNavigationBar() {
     var selectedItem by remember { mutableIntStateOf(0) }
